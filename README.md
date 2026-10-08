@@ -84,19 +84,13 @@ at the perimeter.
 Breach-at-the-Perimeter/
 ├── README.md
 ├── report/
-│   ├── Breach_at_the_Perimeter_VAPT_Report.pdf    <- full report (renders in-browser on GitHub)
-│   ├── Breach_at_the_Perimeter_VAPT_Report.docx   <- editable source
-│   └── Breach_at_the_Perimeter_Runbook.pdf        <- step-by-step execution runbook
+│   └── Breach_at_the_Perimeter_VAPT_Report.pdf    <- full report (renders in-browser on GitHub)
 ├── scans/
 │   ├── nikto_default.txt
 │   ├── nikto_spoofed.txt
 │   └── nikto_mutated.txt
 └── screenshots/                                   <- numbered evidence, 01 to 20
 ```
-
-> Note: `nikto_default.txt` is reconstructed from the captured run (the original file was not
-> available when this repo was assembled). You can replace it with the original from your Kali
-> `~/Documents/Breach_at_the_Perimeter/` folder if you prefer the exact byte-for-byte file.
 
 ---
 
@@ -123,8 +117,7 @@ Breach-at-the-Perimeter/
 
 1. Run Kali and Metasploitable 2 in VMware on the same NAT network.
 2. Confirm the target IP (`ifconfig` on the target; `nmap -sn` and `ping` from Kali).
-3. Work through the five tasks using [`report/Breach_at_the_Perimeter_Runbook.pdf`](report/Breach_at_the_Perimeter_Runbook.pdf),
-   which lists every command, what to expect, and the fix if a step misbehaves.
+3. Work through the five tasks in `report/Breach_at_the_Perimeter_VAPT_Report.pdf` (Sections 5-9), which documents every command used, the expected output, and the fix for each step that can misbehave.
 
 ---
 
